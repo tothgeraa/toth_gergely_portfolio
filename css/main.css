@@ -1,0 +1,459 @@
+body
+{
+	font-size: 16px;
+	font-weight: 500;
+	font-family: 'Antonio', sans-serif;
+}
+
+*, *::before, *::after
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+img
+{
+	max-width: 100%;
+}
+
+/*--layout--*/
+	body
+	{
+		display: grid;
+		grid-template-areas: 
+			"fejlec"
+			"kontent"
+			"lablec"
+			;
+		grid-template-rows: max-content 1fr max-content;
+		min-height: 100vh;	
+
+	}
+
+	header
+	{
+		background-color: #eeeeee;*/
+		grid-area: fejlec;
+	}
+
+	main
+	{
+		grid-area: kontent;
+	}
+
+	footer
+	{
+		grid-area: lablec;
+	}
+/*--layout_end--*/
+
+
+/*--azonos_header--*/
+	header a
+	{
+		text-decoration: none;
+		color: #505050;
+
+
+	}
+
+	.header_menu
+		{
+			cursor: pointer;
+			background-color: white;
+			width: 1rem;
+			text-align: center;
+			border-radius: .5rem;
+			font-size: 1.2rem;
+			user-select: none;
+			font-weight: 600;
+			margin-left: .5rem;
+			margin-right: .5rem;
+			padding: .25rem .75rem;
+		}
+
+	.header_menu:hover
+		{
+			-webkit-box-shadow:0px 10px 5px 5px #00adb5;
+			-moz-box-shadow:10px 5px 5px #00adb5;
+			box-shadow: 10px 5px 5px #00adb5;
+			
+		}
+
+
+		
+	header
+	{
+		line-height: 2rem;
+		font-size: .95rem;
+		text-align: left;
+		padding: .5rem 1rem;
+		
+	}
+
+	.header_bal
+		{
+			display: inline-block;
+		}	
+
+	.header_jobb
+		{
+			float: right;
+			display: inline-block;
+			text-align: right;
+		}
+
+/*--azonos_header_end--*/
+
+/*--azonos_footer--*/
+
+	footer
+		{
+			background-color: #aad8d3;
+			color:#505050;
+			line-height: 1rem;
+			font-weight: 600; 
+			align-self: end;
+
+			
+		}
+	footer a
+		{
+			margin-bottom: 0.3rem;
+			color:#505050;
+			display: inline-block;
+			font-weight: 500;
+		}
+
+	footer a:hover
+		{
+			text-decoration: underline;
+			font-style: italic;
+		}
+
+	#footer
+		{
+			padding: .5rem;
+		}
+
+	.tmp
+		{
+			margin-top: 0.3rem;
+		}	
+
+	.balra_tol
+		{
+			margin-left: .5rem;
+		}	
+
+/*--azonos_footer_end--*/
+
+/*--azonos_main--*/
+
+	main
+		{
+			background-color: #393e46;
+		}
+
+/*--azonos_main_end--*/
+
+
+
+		
+
+
+/*--index_sajat-*/
+
+	#fooldal
+	{
+		box-sizing: border-box;
+		background-color: #aad8d3;
+		margin: 2rem auto;
+		border: .5rem #aad8d3;
+		border-radius: .5rem;
+		padding: .5rem;
+		vertical-align: auto;
+		margin-top: 3.5rem;
+		max-width: 50rem;
+		margin-bottom: 3rem;
+
+	}
+
+	#fooldal img	
+	{ 
+		max-height: 30rem;
+		display: inline-block;
+		float: right;
+		padding-left: 11rem;
+	}
+
+	#bemutatkozas
+	{
+		min-height: 30rem;
+
+		max-width: 22rem;
+		display: flex;
+		
+		
+		padding-left: 1rem;
+	}
+
+	#nev
+	{
+		
+		font-size: 2.5rem;
+		font-weight: 2.5rem;
+		
+	}	
+
+	#portfolio
+	{
+		display: inline-block;
+		font-size: 2rem;
+		font-weight: 2rem;
+		color: #505050;
+		padding-top: .5rem;
+		padding-bottom: 1rem;
+	}
+	#bemutatkozo_szoveg
+	{
+		font-size: 1.5rem;
+	}		
+/*--index_sajat_end--*/
+
+/*--rolam_sajat--*/
+	.rolam
+	{
+		display: grid;
+		grid-template-columns: auto 70%;
+		grid-auto-rows: minmax(200px, auto);
+		grid-gap: 20px;
+		justify-content: center;
+		align-content: center;
+		min-height: 80vh;
+		margin-top: 0.6rem;
+	}
+
+
+
+
+	.rolam img	
+	{
+		max-width: 95%;
+		min-width: 25%;
+		margin-left: 2rem;
+		margin-right: 2rem;
+		display: grid;
+		justify-content: center;
+		align-content: center;
+
+	}
+
+
+
+	#rolam_leiras
+	{
+		background-color: #aad8d3;
+		text-align: left;
+		font-size: 1.5rem;
+		font-weight: 1.5rem;
+		padding: 1rem;
+		border:2rem #393e46;
+		border-radius: 1rem;
+		grid-row: span 2;
+		margin-left: 2rem;
+		margin-right: 2rem;
+	}
+
+	#mernoki
+	{
+		
+	}
+
+	#sport
+	{
+		
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+	}	
+
+	#szemelyes_adatok_fejlec
+	{
+
+		font-weight: bold;
+	}
+
+	#szemelyes_adatok
+	{
+		
+		padding-top: .5rem;
+	}	
+
+	.oneletrajz
+		{
+			font-size: 1.5rem;
+			font-weight: 1.5rem;
+			text-decoration: none;
+			color: black;
+			font-style: italic;
+			text-decoration: underline;
+		}
+
+	.oneletrajz:hover
+		{
+			background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/squiggle.svg");
+  			background-position: bottom;
+  			background-repeat: repeat-x;
+  			background-size: 20%;
+  			border-bottom: 0;
+  			padding-bottom: .3em;
+  			text-decoration: none;
+		}	
+		
+
+
+/*--rolam_sajat_end--*/
+
+/*--projektek_sajat--*/
+	
+	.grid_projektek img
+		{
+			max-width: 5.5rem;
+			margin: 0rem;
+			min-width: 25%;
+		}
+
+
+	.grid_projektek
+		{
+			display: grid;
+			grid-template-columns: 80% auto;
+			grid-auto-rows: minmax(200px, auto);
+			grid-gap: 20px;
+			justify-content: center;
+			align-content: center;
+			min-height: 80vh;
+		}	
+				
+	.szoveg
+		{
+			display: grid;
+			justify-content: center;
+			align-content: center;
+
+		}	
+
+	#video
+		{
+			
+			background-color: #aad8d3;
+			text-align: left;
+			font-size: 1.5rem;
+			font-weight: 1.5rem;
+			padding: 1rem;
+			border:2rem #393e46;
+			border-radius: 1rem;
+			margin-left: 2rem; 
+			
+		}	
+
+	
+	.youtube
+		{
+			margin-left: 3rem;
+			display: grid;
+			justify-content: center;
+			align-content: center;
+		}	
+
+
+	.szoveg2
+		{
+			background-color: #aad8d3;
+			text-align: left;
+			font-size: 1.5rem;
+			font-weight: 1.5rem;
+			padding: 1rem;
+			border:2rem #393e46;
+			border-radius: 1rem;
+			margin-left: 2rem;
+		}	
+
+	.youtube_kep:hover	
+		{
+			-webkit-box-shadow:0px 10px 5px 5px #00adb5;
+			-moz-box-shadow:10px 5px 5px #00adb5;
+			box-shadow: 10px 5px 5px #00adb5;
+			cursor: pointer;
+		}
+/*--projekt_sajat_end--*/
+		
+/*--build_sajat--*/
+
+	.build_grid
+		{
+			display: grid;
+			grid-template-rows: auto;
+			grid-auto-columns: minmax(200px, auto);
+			grid-gap: 20px;
+			justify-content: center;
+			align-content: center;
+
+		}
+
+	.build_kepek
+		{
+			display: block;
+    		margin-left: auto;
+    		margin-right: auto;
+		}	
+
+	.build_grid img
+	 	{
+			margin: 0rem;
+			min-width: 3rem;
+			height: 12rem;
+			width: 20rem;
+    		margin: 10px;
+    		margin-top: 2rem;
+    		background-color: #aad8d3;
+			font-size: 1.5rem;
+			font-weight: 1.5rem;
+			padding: 0.5rem;
+			border:2rem #393e46;
+			border-radius: 1rem;
+			margin-right: 2rem;
+    		
+	 	}	
+
+	 .build_grid img:hover
+	 	{
+	 		-webkit-box-shadow:0px 10px 5px 5px #eeeeee ;
+			-moz-box-shadow:10px 5px 5px #eeeeee ;
+			box-shadow: 10px 5px 5px #eeeeee ;
+			/*cursor: pointer;*/
+	 	}	
+
+	 .build_szoveg
+	 	{
+	 		background-color: #aad8d3;
+			text-align: left;
+			font-size: 1.5rem;
+			font-weight: 1.5rem;
+			padding: 1rem;
+			border:2rem #393e46;
+			border-radius: 1rem;
+			margin: 2rem;
+	 	}	
+
+
+	 .weboldalterv
+	 	{
+	 		font-weight: bold;
+	 		font-size: 1.5rem;
+	 	}
+
+	 	
+
+/*--build_sajat_end--*/
